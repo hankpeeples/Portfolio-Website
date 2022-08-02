@@ -11,7 +11,14 @@ module.exports = {
     "./src/components/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#78FECF",
+        secondary: "#F7DD72",
+        accent: "#D36582",
+        background: "#2f2f2f",
+      },
+    },
     fontFamily: {
       proxima: ["ProximaReg", "sans-serif"],
       proximaBold: ["ProximaBold", "sans-serif"],
