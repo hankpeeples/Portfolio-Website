@@ -1,9 +1,9 @@
+import Homepage from "./pages/Homepage";
+
 function App() {
   return (
-    <div className="App">
-      <header>
-        <p className="text-3xl font-bold underline">Hi</p>
-      </header>
+    <div className="font-proxima">
+      <Homepage />
     </div>
   );
 }

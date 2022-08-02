@@ -1,14 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
-  content: ["./src/**/*.{js,jsx}", "./public/index.html"],
-  darkMode: false,
+  // purge: {
+  //   enabled: true,
+  //   content: ["./**/*.html"],
+  // },
+  content: [
+    "./src/**/*.{js,jsx}",
+    "./public/index.html",
+    "./src/pages/**/*.{js,jsx}",
+    "./src/components/**/*.{js,jsx}",
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-      },
+    extend: {},
+    fontFamily: {
+      proxima: ["ProximaReg", "sans-serif"],
+      proximaBold: ["ProximaBold", "sans-serif"],
     },
   },
   variants: {
