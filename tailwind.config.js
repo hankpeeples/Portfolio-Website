@@ -21,6 +21,7 @@ module.exports = {
       },
       boxShadow: {
         btn: "2px 2px 6px",
+        social: "0px 0px 10px",
       },
     },
     fontFamily: {
