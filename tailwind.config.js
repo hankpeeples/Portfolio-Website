@@ -17,6 +17,10 @@ module.exports = {
         secondary: "#F7DD72",
         accent: "#D36582",
         background: "#2f2f2f",
+        backgroundAlt: "#8B9EB7",
+      },
+      boxShadow: {
+        btn: "2px 2px 6px",
       },
     },
     fontFamily: {
