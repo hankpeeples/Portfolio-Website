@@ -1,10 +1,19 @@
 import NavBar from "../components/NavBar";
+import Socials from "../components/Socials";
+import Footer from "../components/Footer";
+import MyInfo from "../components/MyInfo";
+import ContactMe from "../components/ContactMe";
+import Experience from "../components/Experience";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
-      <h3 className="">Home</h3>
+      <MyInfo />
+      <Experience />
+      <Socials />
+      <ContactMe />
+      <Footer />
     </div>
   );
 };
