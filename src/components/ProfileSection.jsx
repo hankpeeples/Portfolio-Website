@@ -18,6 +18,15 @@ const ProfileSection = (props) => {
           <img src={require("../assets/tempPhoto.jpeg")} alt="Personal logo" />
         </div>
       </div>
+      <p className="p-5 before:mr-10">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus
+        velit eget risus malesuada vestibulum. Fusce lacinia placerat diam sed
+        euismod. Nam tempus pellentesque eleifend. Sed non nulla a lacus malesuada
+        vulputate. Aliquam malesuada dolor at sapien sodales semper. Morbi non
+        viverra est. Duis auctor semper est ac bibendum. Sed a cursus risus. Aenean
+        viverra lectus at vestibulum sagittis. Nullam molestie accumsan augue, eu
+        pulvinar ex luctus in.
+      </p>
     </div>
   );
 };
