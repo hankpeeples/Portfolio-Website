@@ -17,6 +17,14 @@ const Button = (props) => {
         </button>
       </div>
     );
+  } else if (props.color === "accent") {
+    return (
+      <div className="">
+        <button className="bg-accent text-black py-1 px-3 rounded hover:shadow-btn hover:shadow-accent transition-shadow ease-in-out duration-300">
+          {props.children}
+        </button>
+      </div>
+    );
   }
 };
 
