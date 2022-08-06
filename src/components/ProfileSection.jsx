@@ -18,14 +18,12 @@ const ProfileSection = (props) => {
           <img src={require("../assets/tempPhoto.jpeg")} alt="Personal logo" />
         </div>
       </div>
-      <p className="p-5 pt-10 before:mr-10">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum luctus
-        velit eget risus malesuada vestibulum. Fusce lacinia placerat diam sed
-        euismod. Nam tempus pellentesque eleifend. Sed non nulla a lacus malesuada
-        vulputate. Aliquam malesuada dolor at sapien sodales semper. Morbi non
-        viverra est. Duis auctor semper est ac bibendum. Sed a cursus risus. Aenean
-        viverra lectus at vestibulum sagittis. Nullam molestie accumsan augue, eu
-        pulvinar ex luctus in.
+      <p className="p-2 text-lg pt-10 before:mr-10">
+        I am a GoLang developer currently based in Denton, Tx. I have a passion for
+        all things technology and love working with others on projects. I enjoy every
+        part of development such as planning, designing, and the actual building of
+        the application. When I am not programming or learning, I enjoy playing
+        guitar, listening to music, watching movies, and playing golf.
       </p>
     </div>
   );
