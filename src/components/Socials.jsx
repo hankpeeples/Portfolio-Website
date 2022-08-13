@@ -5,7 +5,6 @@ const Socials = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="flex flex-col lg:w-1/3 md:w-1/3 w-1/2 h-fit justify-between items-center pt-6">
-        <p>Check out my socials!</p>
         <div className="flex flex-row gap-x-11 pt-3">
           <div className="p-1 hover:text-primary hover:shadow-social rounded transition-all ease-in-out duration-300">
             <a
