@@ -32,9 +32,11 @@ const Experience = () => {
         />
         <div className="flex flex-row gap-8 pt-3">
           <img data-tip="Golang" src={Go} alt="Go Icon" height={46} width={46} />
-          <img data-tip="Java" src={Java} alt="Java Icon" height={46} width={46} />
           <img data-tip="C++" src={Cpp} alt="Cpp Icon" height={46} width={46} />
           <img data-tip="C" src={CIcon} alt="C Icon" height={46} width={46} />
+          <img data-tip="Java" src={Java} alt="Java Icon" height={46} width={46} />
+        </div>
+        <div className="flex flex-row gap-8 pt-4">
           <img
             data-tip="JavaScript"
             src={JSIcon}
@@ -52,9 +54,9 @@ const Experience = () => {
         </div>
         <div className="flex flex-row gap-8 pt-4">
           <img
-            data-tip="Github"
-            src={GithubLogo}
-            alt="Github Icon"
+            data-tip="React"
+            src={ReactIcon}
+            alt="React Icon"
             height={46}
             width={46}
           />
@@ -67,15 +69,15 @@ const Experience = () => {
             height={46}
             width={46}
           />
+        </div>
+        <div className="flex flex-row gap-8 pt-4">
           <img
-            data-tip="React"
-            src={ReactIcon}
-            alt="React Icon"
+            data-tip="Github"
+            src={GithubLogo}
+            alt="Github Icon"
             height={46}
             width={46}
           />
-        </div>
-        <div className="flex flex-row gap-8 pt-4">
           <img
             data-tip="Docker"
             src={DockerIcon}
@@ -91,6 +93,15 @@ const Experience = () => {
             width={46}
           />
           <img
+            data-tip="Linux"
+            src={Linux}
+            alt="Linux Icon"
+            height={46}
+            width={46}
+          />
+        </div>
+        <div className="flex flex-row gap-8 pt-4">
+          <img
             data-tip="Intellij IDEs"
             src={IntellijIcon}
             alt="Intellij Icon"
@@ -101,13 +112,6 @@ const Experience = () => {
             data-tip="VSCode"
             src={VSCode}
             alt="VSCode Icon"
-            height={46}
-            width={46}
-          />
-          <img
-            data-tip="Linux"
-            src={Linux}
-            alt="Linux Icon"
             height={46}
             width={46}
           />
