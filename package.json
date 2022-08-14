@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Personal portfolio website",
+  "proxy": "https://localhost:3000",
   "main": "index.js",
   "author": "HenryPeeples <hgpeeples48@gmail.com>",
   "license": "MIT",
