@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -8,7 +9,10 @@ import (
 
 func main() {
 	r := gin.Default()
-	r.SetTrustedProxies([]string{"127.0.0.1"})
+	err := r.SetTrustedProxies([]string{"127.0.0.1"})
+	if err != nil {
+		log.Fatalf("SetTrustedProxies failed...\n%v", err)
+	}
 
 	r.LoadHTMLGlob("build/*.html")
 	r.Static("/static", "build/static")
@@ -23,5 +27,8 @@ func main() {
 		})
 	})
 
-	r.Run(":3000")
+	err = r.Run(":3000")
+	if err != nil {
+		log.Fatalf("Run failed...\n%v", err)
+	}
 }
