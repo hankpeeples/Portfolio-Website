@@ -7,10 +7,16 @@ const NavBar = () => {
       <div className="flex flex-col md:flex-row lg:w-1/2 md:w-2/3 w-screen h-fit justify-between items-center p-3">
         <img width="200em" src={require("../assets/logo.png")} alt="Personal logo" />
         <div className="flex flex-row pt-5 md:pt-0 gap-8">
-          <Button color="bg-primary text-black hover:shadow-primary">
+          <Button
+            color="bg-primary text-black hover:shadow-primary"
+            link="/projects"
+          >
             Projects
           </Button>
-          <Button color="bg-secondary text-black hover:shadow-secondary">
+          <Button
+            color="bg-secondary text-black hover:shadow-secondary"
+            link="/posts"
+          >
             Posts
           </Button>
           <Button color="bg-accent text-white hover:shadow-accent">
