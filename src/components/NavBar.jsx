@@ -16,20 +16,20 @@ const NavBar = () => {
           onClick={() => navigate("/")}
         />
         <div className="flex flex-row pt-5 md:pt-0 gap-8">
+          <Button colors="bg-accent text-white hover:shadow-accent" link="/">
+            Home
+          </Button>
           <Button
-            color="bg-primary text-black hover:shadow-primary"
+            colors="bg-primary text-black hover:shadow-primary"
             link="/projects"
           >
             Projects
           </Button>
           <Button
-            color="bg-secondary text-black hover:shadow-secondary"
+            colors="bg-secondary text-black hover:shadow-secondary"
             link="/posts"
           >
             Posts
-          </Button>
-          <Button color="bg-accent text-white hover:shadow-accent">
-            Contact Me!
           </Button>
         </div>
       </div>
