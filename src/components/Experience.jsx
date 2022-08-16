@@ -30,13 +30,11 @@ const Experience = () => {
           effect="solid"
           className="!font-proximaBold !text-[16px]"
         />
-        <div className="flex flex-row gap-8 pt-3">
+        <div className="flex flex-row gap-8 pt-3 flex-wrap">
           <img data-tip="Golang" src={Go} alt="Go Icon" height={46} width={46} />
           <img data-tip="C++" src={Cpp} alt="Cpp Icon" height={46} width={46} />
           <img data-tip="C" src={CIcon} alt="C Icon" height={46} width={46} />
           <img data-tip="Java" src={Java} alt="Java Icon" height={46} width={46} />
-        </div>
-        <div className="flex flex-row gap-8 pt-4">
           <img
             data-tip="JavaScript"
             src={JSIcon}
@@ -52,7 +50,7 @@ const Experience = () => {
             width={46}
           />
         </div>
-        <div className="flex flex-row gap-8 pt-4">
+        <div className="flex flex-row gap-8 pt-4 flex-wrap">
           <img
             data-tip="React"
             src={ReactIcon}
@@ -69,8 +67,6 @@ const Experience = () => {
             height={46}
             width={46}
           />
-        </div>
-        <div className="flex flex-row gap-8 pt-4">
           <img
             data-tip="Github"
             src={GithubLogo}
@@ -99,8 +95,6 @@ const Experience = () => {
             height={46}
             width={46}
           />
-        </div>
-        <div className="flex flex-row gap-8 pt-4">
           <img
             data-tip="Intellij IDEs"
             src={IntellijIcon}
