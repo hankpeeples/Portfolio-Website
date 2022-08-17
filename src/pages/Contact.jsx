@@ -19,18 +19,28 @@ const Contact = () => {
         <span className="flex p-1.5 px-3 rounded-md justify-center items-center gap-3 bg-zinc-900">
           hgpeeples48@gmail.com
           {textCopied ? (
-            <CheckBoxFill
-              strokeWidth={2}
-              size={20}
-              className="text-primary animate-pulse"
-            />
+            <div className="flex justify-center items-center gap-1">
+              <CheckBoxFill
+                strokeWidth={2}
+                size={20}
+                className="text-primary animate-pulse"
+              />
+              <p className="text-xs text-primary">Copied!</p>
+            </div>
           ) : (
-            <Copy
-              strokeWidth={2}
-              size={20}
-              className="cursor-pointer hover:text-primary hover:scale-110 transition-scale ease-in-out duration-300"
+            <div
+              className="flex justify-center items-center gap-1 hover:text-primary"
               onClick={copyToClipboard}
-            />
+            >
+              <Copy
+                strokeWidth={2}
+                size={20}
+                className="cursor-pointer transition-text ease-in-out duration-300"
+              />
+              <p className="text-xs cursor-pointer transition-text ease-in-out duration-300 pr-3.5">
+                Copy
+              </p>
+            </div>
           )}
         </span>
       </p>
