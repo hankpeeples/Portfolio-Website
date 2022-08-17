@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="">
+    <div className="flex flex-col w-screen justify-center items-center">
       <p className="flex pt-10 justify-center items-center gap-3">
         Reach out via email:
         <span className="flex p-1.5 px-3 rounded-md justify-center items-center gap-3 bg-zinc-900">
@@ -34,6 +34,7 @@ const Contact = () => {
           )}
         </span>
       </p>
+      <p className="mt-4">I look forward to hearing from you!</p>
     </div>
   );
 };

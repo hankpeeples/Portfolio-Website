@@ -2,7 +2,7 @@ import React from "react";
 import HeadingSvg from "./HeadingSvg";
 import { LinkOut } from "akar-icons";
 
-const ProfileSection = (props) => {
+const ProfileSection = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <HeadingSvg
@@ -22,8 +22,9 @@ const ProfileSection = (props) => {
       <p className="p-2 text-lg pt-10 before:mr-10">
         I am a GoLang developer currently based in Denton, Tx. I have a passion for
         all things technology and love working with others on projects. I enjoy every
-        part of development such as planning, designing, and the actual building of
-        the application. When I am not programming or learning, I enjoy playing
+        part of the development process such as planning, designing, and the actual
+        building of the application. I consider myself a fast learner and enjoy
+        learning new technologies. When not programming or learning, I enjoy playing
         guitar, listening to music, watching movies, and playing golf.
       </p>
       <button
