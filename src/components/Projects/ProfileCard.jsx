@@ -6,7 +6,6 @@ const ProfileCard = () => {
   const [githubProfile, setGithubProfile] = useState({});
 
   useEffect(() => {
-    console.log("Fetching");
     axios
       .get("https://api.github.com/users/hankpeeples")
       .then((res) => {

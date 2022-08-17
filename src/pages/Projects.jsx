@@ -14,7 +14,6 @@ const Projects = () => {
       .get("https://api.github.com/users/hankpeeples/repos")
       .then((res) => {
         setGithubRepos(res.data);
-        console.log(res.data);
       })
       .catch((err) => console.log("Failed to fetch projects: " + err))
       .then(() => setLoading(false));
@@ -29,7 +28,7 @@ const Projects = () => {
         ) : (
           <>
             <ProfileCard />
-            <RepoCard />
+            <RepoCard data={githubRepos} />
           </>
         )}
       </div>
