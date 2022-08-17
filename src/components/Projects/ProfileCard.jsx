@@ -4,7 +4,6 @@ import { LinkOut } from "akar-icons";
 
 const ProfileCard = () => {
   const [githubProfile, setGithubProfile] = useState({});
-  const [githubRepos, setGithubRepos] = useState({});
 
   useEffect(() => {
     console.log("Fetching");
@@ -14,17 +13,6 @@ const ProfileCard = () => {
         setGithubProfile(res.data);
       })
       .catch((err) => console.log("Failed to fetch github profile: ", err));
-  }, []);
-
-  useEffect(() => {
-    console.log("Fetching projects");
-    axios
-      .get("https://api.github.com/users/hankpeeples/repos")
-      .then((res) => {
-        setGithubRepos(res.data);
-        console.log(res.data);
-      })
-      .catch((err) => console.log("Failed to fetch projects: " + err));
   }, []);
 
   return (

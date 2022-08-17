@@ -5,7 +5,7 @@ import Loading from "../components/Loading";
 import RepoCard from "../components/Projects/RepoCard";
 
 const Projects = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [githubRepos, setGithubRepos] = useState({});
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Projects = () => {
         console.log(res.data);
       })
       .catch((err) => console.log("Failed to fetch projects: " + err))
-      .then(() => setLoading(true));
+      .then(() => setLoading(false));
   }, []);
 
   return (
