@@ -14,36 +14,27 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col w-screen justify-center items-center">
-      <p className="flex pt-10 justify-center items-center gap-3">
+      <div className="flex flex-col md:flex-row pt-10 justify-center items-center">
         Reach out via email:
-        <span className="flex p-1.5 px-3 rounded-md justify-center items-center gap-3 bg-zinc-900">
+        <span className="flex p-1.5 px-3 mt-1 md:mt-0 rounded-md justify-center items-center bg-zinc-900 ml-3">
           hgpeeples48@gmail.com
-          {textCopied ? (
-            <div className="flex justify-center items-center gap-1">
-              <CheckBoxFill
-                strokeWidth={2}
-                size={20}
-                className="text-primary animate-pulse"
-              />
-              <p className="text-xs text-primary">Copied!</p>
-            </div>
-          ) : (
-            <div
-              className="flex justify-center items-center gap-1 hover:text-primary"
-              onClick={copyToClipboard}
-            >
-              <Copy
-                strokeWidth={2}
-                size={20}
-                className="cursor-pointer transition-text ease-in-out duration-300"
-              />
-              <p className="text-xs cursor-pointer transition-text ease-in-out duration-300 pr-3.5">
-                Copy
-              </p>
-            </div>
-          )}
         </span>
-      </p>
+        <div
+          className="flex flex-row gap-2 p-1.5 m-1.5 rounded-md hover:shadow-social hover:shadow-primary hover:text-primary transition-text ease-in-out duration-300 cursor-pointer"
+          onClick={copyToClipboard}
+        >
+          {textCopied ? (
+            <CheckBoxFill
+              strokeWidth={2}
+              size={20}
+              className="text-primary animate-pulse"
+            />
+          ) : (
+            <Copy strokeWidth={2} size={20} className="transition-text" />
+          )}
+          <p className="text-sm">&#8592; Copy Email</p>
+        </div>
+      </div>
       <p className="mt-4">I look forward to hearing from you!</p>
     </div>
   );
