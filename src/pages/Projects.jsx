@@ -40,8 +40,6 @@ const Projects = () => {
     );
   }
 
-  githubRepos.reverse();
-
   return (
     <div className="flex w-screen h-screen justify-center overflow-scroll">
       <div className="flex flex-col w-screen md:w-2/3 lg:w-1/2 h-fit p-3 mt-10 gap-10">
@@ -50,7 +48,7 @@ const Projects = () => {
           <Loading />
         ) : (
           <div className="flex flex-row flex-wrap gap-10 justify-between">
-            {githubRepos.map((value, index) => {
+            {githubRepos.reverse().map((value, index) => {
               console.log(value);
               if (value.name !== "hankpeeples")
                 return <RepoCard data={value} key={index} />;
