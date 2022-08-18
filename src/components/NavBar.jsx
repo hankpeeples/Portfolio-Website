@@ -27,9 +27,9 @@ const NavBar = () => {
           </Button>
           <Button
             colors="bg-secondary text-black hover:shadow-secondary"
-            link="/posts"
+            link="/blogs"
           >
-            Posts
+            Blogs
           </Button>
         </div>
       </div>
