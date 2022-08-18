@@ -4,24 +4,43 @@ import Loading from "../components/Loading";
 import RepoCard from "../components/Projects/RepoCard";
 
 const Projects = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [githubRepos, setGithubRepos] = useState([{}]);
+  const [fetchError, setFetchError] = useState(undefined);
 
   useEffect(() => {
     setLoading(true);
-
     axios
-      .get("https://api.github.com/users/hankpeeples/repos")
+      .get("https://api.github.com/users/hankpeeples/subscriptions")
       .then((res) => {
         setGithubRepos(res.data);
-        console.log(res.data);
+        console.log(res);
       })
-      .catch((err) => console.log("Failed to fetch projects: " + err));
+      .catch((err) => {
+        setFetchError({
+          err: "Unable to fetch repository information... Please try again later.",
+          msg: err.message,
+        });
+      });
 
     setTimeout(() => {
       setLoading(false);
     }, 1000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  if (fetchError !== undefined) {
+    return (
+      <div className="flex w-screen h-screen justify-center">
+        <div className="flex flex-col w-screen md:w-2/3 lg:w-1/2 h-fit p-3 mt-10 items-center bg-accent rounded-md">
+          <p className="font-proximaBold text-lg">{fetchError.err}</p>
+          <p className="mt-5">{fetchError.msg}.</p>
+        </div>
+      </div>
+    );
+  }
+
+  githubRepos.reverse();
 
   return (
     <div className="flex w-screen h-screen justify-center overflow-scroll">
@@ -32,6 +51,7 @@ const Projects = () => {
         ) : (
           <div className="flex flex-row flex-wrap gap-10 justify-between">
             {githubRepos.map((value, index) => {
+              console.log(value);
               if (value.name !== "hankpeeples")
                 return <RepoCard data={value} key={index} />;
               else return null;
