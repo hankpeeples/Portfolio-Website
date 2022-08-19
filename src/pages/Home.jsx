@@ -11,7 +11,6 @@ const Home = () => {
       <Bio />
       <Experience />
       <Contact />
-      <Footer />
     </div>
   );
 };
