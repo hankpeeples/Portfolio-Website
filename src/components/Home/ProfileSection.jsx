@@ -15,8 +15,11 @@ const ProfileSection = () => {
           <h1 className="font-proximaBold text-2xl md:text-3xl">Henry Peeples</h1>
           <h3 className="text-xl md:text-2xl">Developer / Tech enthusiast</h3>
         </div>
-        <div className="w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem] rounded-full overflow-hidden outline">
-          <img src={require("../../assets/tempPhoto.jpeg")} alt="Personal logo" />
+        <div className="w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem] rounded-full overflow-hidden">
+          <img
+            src={require("../../assets/profile-picture-coming-soon.png")}
+            alt="Personal logo"
+          />
         </div>
       </div>
       <p className="p-2 text-lg pt-10 before:mr-10">
