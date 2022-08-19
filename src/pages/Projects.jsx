@@ -51,7 +51,7 @@ const Projects = () => {
         ) : (
           <div className="flex flex-row flex-wrap gap-10 justify-between">
             {githubRepos.reverse().map((value, index) => {
-              if (value.name !== "hankpeeples")
+              if (value.name !== "hankpeeples" && value.name !== "resume")
                 return <RepoCard data={value} key={index} />;
               else return null;
             })}
