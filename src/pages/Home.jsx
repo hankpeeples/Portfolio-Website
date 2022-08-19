@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import MyInfo from "../components/Home/MyInfo";
 import Experience from "../components/Home/Experience";
 import Contact from "./Contact";

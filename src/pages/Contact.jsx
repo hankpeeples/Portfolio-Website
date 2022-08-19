@@ -32,7 +32,7 @@ const Contact = () => {
           ) : (
             <Copy strokeWidth={2} size={20} className="transition-text" />
           )}
-          <p className="text-sm">&#8592; Copy Email</p>
+          <p className="text-sm">Copy Email</p>
         </div>
       </div>
       <p className="mt-4">I look forward to hearing from you!</p>
