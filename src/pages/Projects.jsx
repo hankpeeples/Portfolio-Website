@@ -14,13 +14,15 @@ const Projects = () => {
       .get("https://api.github.com/users/hankpeeples/subscriptions")
       .then((res) => {
         setGithubRepos(res.data);
-        console.log(res);
       })
       .catch((err) => {
         setFetchError({
           err: "Unable to fetch repository information... Please try again later.",
           msg: err.message,
         });
+        console.log(
+          "[ERROR]: Unable to fetch repository information... " + err.message
+        );
       });
 
     setTimeout(() => {
@@ -44,12 +46,11 @@ const Projects = () => {
     <div className="flex w-screen h-screen justify-center overflow-scroll">
       <div className="flex flex-col w-screen md:w-2/3 lg:w-1/2 h-fit p-3 mt-10 gap-10">
         <h1 className="text-3xl font-proximaBold underline">My Projects</h1>
-        {loading || githubRepos[0] === undefined ? (
+        {loading || githubRepos === undefined ? (
           <Loading />
         ) : (
           <div className="flex flex-row flex-wrap gap-10 justify-between">
             {githubRepos.reverse().map((value, index) => {
-              console.log(value);
               if (value.name !== "hankpeeples")
                 return <RepoCard data={value} key={index} />;
               else return null;
