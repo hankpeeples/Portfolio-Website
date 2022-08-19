@@ -27,12 +27,14 @@ const ProfileSection = () => {
         learning new technologies. When not programming or learning, I enjoy playing
         guitar, listening to music, watching movies, and playing golf.
       </p>
-      <button
+      <a
+        href="https://hankpeeples.github.io/resume/"
+        target="_blank"
+        rel="noreferrer"
         className="bg-accent text-white hover:shadow-accent mt-10 py-1 px-3 rounded hover:shadow-btn transition-shadow ease-in-out duration-300 flex-row flex justify-center items-center gap-3"
-        onClick={() => console.log("Link")}
       >
         My resume <LinkOut strokeWidth={2} size={16} />
-      </button>
+      </a>
     </div>
   );
 };
