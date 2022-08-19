@@ -28,6 +28,7 @@ const NavBar = () => {
           <Button
             colors="bg-secondary text-black hover:shadow-secondary"
             link="/blogs"
+            disabled
           >
             Blogs
           </Button>

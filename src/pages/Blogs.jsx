@@ -2,8 +2,10 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <div className="flex justify-center lg:w-1/2 md:w-2/3 w-screen h-screen">
-      <div className="bg-accent w-full">Blogs</div>
+    <div className="flex h-screen w-screen justify-center">
+      <div className="flex flex-col w-screen md:w-2/3 lg:w-1/2 h-fit p-3">
+        <div className="w-full">Coming soon...</div>
+      </div>
     </div>
   );
 };
