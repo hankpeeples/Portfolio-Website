@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <div className="flex w-screen justify-center items-center">
-      <div className="flex w-screen md:w-2/3 lg:w-1/2 h-fit p-5 pt-10 justify-center items-center gap-8  select-none">
+      <div className="flex w-screen md:w-2/3 lg:w-1/2 h-fit p-5 pt-10 justify-center items-center select-none">
         <p className="text-sm text-[#8c8c8c]">
           © {date.getFullYear()} Henry Peeples
         </p>
