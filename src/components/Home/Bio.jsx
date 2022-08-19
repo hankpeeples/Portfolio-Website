@@ -9,9 +9,12 @@ const Bio = () => {
           Bio
         </h2>
         <BioYear year="1999">Born in Plano, Texas</BioYear>
-        <BioYear year="2023">
-          Graduated from The University of North Texas with a bachelors degree in
-          Computer Science (GPA?)
+        <BioYear year="2018">
+          Started college at the University of Texas A&M Corpus Christi
+        </BioYear>
+        <BioYear year="2020">
+          (Present) Attending the University of North Texas in pursuit of a bachelors
+          degree in Computer Science
         </BioYear>
       </div>
     </div>
