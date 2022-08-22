@@ -20,14 +20,16 @@ const Projects = () => {
           err: "Unable to fetch repository information... Please try again later.",
           msg: err.message,
         });
-        console.log(
+        console.error(
           "[ERROR]: Unable to fetch repository information... " + err.message
         );
+      })
+      .then(() => {
+        setTimeout(() => {
+          setLoading(false);
+        }, 1000);
       });
 
-    setTimeout(() => {
-      setLoading(false);
-    }, 1000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
