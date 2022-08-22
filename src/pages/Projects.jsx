@@ -2,11 +2,18 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loading from "../components/Loading";
 import RepoCard from "../components/Projects/RepoCard";
+import { useLocation } from "react-router";
 
 const Projects = () => {
   const [loading, setLoading] = useState(true);
   const [githubRepos, setGithubRepos] = useState([{}]);
   const [fetchError, setFetchError] = useState(undefined);
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     setLoading(true);
