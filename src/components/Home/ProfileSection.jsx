@@ -16,10 +16,7 @@ const ProfileSection = () => {
           <h3 className="text-xl md:text-2xl">Developer / Tech enthusiast</h3>
         </div>
         <div className="w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem] rounded-full overflow-hidden">
-          <img
-            src={require("../../assets/profile-picture-coming-soon.png")}
-            alt="Personal logo"
-          />
+          <img src={require("../../assets/profile.JPG")} alt="Personal logo" />
         </div>
       </div>
       <p className="p-2 text-lg pt-10 before:mr-10">
