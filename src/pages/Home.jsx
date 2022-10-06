@@ -1,7 +1,7 @@
 import MyInfo from "../components/Home/MyInfo";
 import Experience from "../components/Home/Experience";
 import Contact from "./Contact";
-import Bio from "../components/Home/Bio";
+// import Bio from "../components/Home/Bio";
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 

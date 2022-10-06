@@ -7,7 +7,7 @@ import Blogs from "./pages/Blogs";
 
 function App() {
   return (
-    <div className="font-proxima text-white bg-[#2f2f2f] h-full w-screen">
+    <div className="font-proxima text-white bg-[#2f2f2f] h-full w-full overflow-x-hidden">
       <BrowserRouter>
         <NavBar />
         <Routes>
