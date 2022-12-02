@@ -1,6 +1,6 @@
-import React from "react";
-import HeadingSvg from "./HeadingSvg";
-import { LinkOut } from "akar-icons";
+import React from 'react';
+import HeadingSvg from './HeadingSvg';
+import {LinkOut} from 'akar-icons';
 
 const ProfileSection = () => {
   return (
@@ -8,7 +8,7 @@ const ProfileSection = () => {
       <HeadingSvg
         width="300px"
         height="315px"
-        theme={{ accentColor: "#D36582", skinColor: "#E6B99B", dark: "#1f1f1f" }}
+        theme={{accentColor: '#D36582', skinColor: '#E6B99B', dark: '#1f1f1f'}}
       />
       <div className="flex md:flex-row flex-col justify-center items-center">
         <div className="flex-col justify-center items-center pb-5 md:pr-10 ">
@@ -16,16 +16,16 @@ const ProfileSection = () => {
           <h3 className="text-xl md:text-2xl">Developer / Tech enthusiast</h3>
         </div>
         <div className="w-[4.5rem] h-[4.5rem] md:w-[6rem] md:h-[6rem] rounded-full overflow-hidden">
-          <img src={require("../../assets/profile.JPG")} alt="Personal logo" />
+          <img src={require('../../assets/profile.JPG')} alt="Personal logo" />
         </div>
       </div>
       <p className="p-2 text-lg pt-10 before:mr-10">
-        I am a GoLang developer currently based in Denton, Tx. I have a passion for
-        all things technology and love working with others on projects. I enjoy every
-        part of the development process such as planning, designing, and the actual
-        building of the application. I consider myself a fast learner and enjoy
-        learning new technologies. When not programming or learning, I enjoy playing
-        guitar, listening to music, watching movies, and playing golf.
+        Hello! I am an aspiring developer currently based in Denton, Tx, where I attend the
+        University of North Texas with a major in computer science. I have a passion for all things
+        technology and love working with others on projects. I enjoy every part of the development
+        process, such as planning, designing, and the actual building of the application. I consider
+        myself a fast learner and enjoy learning new technologies. When not programming or learning,
+        I enjoy playing guitar, listening to music, watching movies, and playing golf.
       </p>
       <a
         href="https://hankpeeples.github.io/resume/"
